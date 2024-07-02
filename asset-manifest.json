@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ifiweb/static/css/main.ae42ac5f.css",
-    "main.js": "/ifiweb/static/js/main.dff1dc76.js",
+    "main.js": "/ifiweb/static/js/main.5b62248f.js",
     "static/js/453.e14f651f.chunk.js": "/ifiweb/static/js/453.e14f651f.chunk.js",
     "index.html": "/ifiweb/index.html",
     "main.ae42ac5f.css.map": "/ifiweb/static/css/main.ae42ac5f.css.map",
-    "main.dff1dc76.js.map": "/ifiweb/static/js/main.dff1dc76.js.map",
+    "main.5b62248f.js.map": "/ifiweb/static/js/main.5b62248f.js.map",
     "453.e14f651f.chunk.js.map": "/ifiweb/static/js/453.e14f651f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae42ac5f.css",
-    "static/js/main.dff1dc76.js"
+    "static/js/main.5b62248f.js"
   ]
 }
