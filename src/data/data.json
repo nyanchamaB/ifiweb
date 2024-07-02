@@ -1,0 +1,164 @@
+{
+  "Header": {
+    "title": "We are a habour for creativity",
+    "paragraph": "Nurturing innovation and fostering a passion for learning. Our mission is to transform education through technology, making learning accessible, engaging, and personalized for every student. By digitizing education systems, we aim to create an environment where students can thrive, explore their interests, and develop the skills they need for the future. Join us as we redefine the boundaries of education, empowering educators and students to reach their fullest potential in a dynamic and interconnected world."
+  },
+  "About": {
+    "paragraph": "Welcome to SCHOOL IFI,where we believe in the power of technology to transform education.Our app is designed to be a harbour for creativity,nurturing innovation and fostering a passion of seamless learning. Our mission is to digitize education systemsmaking learning more accessible and make learning more engaging.",
+    
+    "Why": [
+      "Realtime feedback and assessment",
+      "Security and reliability, our system offer that",
+      "Our services are affordable to ensure every student has access to this learning platform",
+      "Strictly certified Teachers involved which reciprocate to job opportunities"
+    ],
+    "Why2": [
+      "We foster collaborative learning",
+      "Comprehensive carriculum,we have a pool of different learning materials for reference",
+      "Personalizes educationoffering the chance to track the student progress",
+      "The app leverages digital technology including AI assistant to engage with learners"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Programs": [
+    {
+      "icon": "fa fa-laptop",
+      "name": "Video Conferencing",
+      "text": "Facilitate live discussions, lectures, and virtual classrooms through video conferencing tools, promoting interactive learning experiences."
+    },
+    {
+      "icon": "fa fa-robot + fa-microphone",
+      "name": "AI Assistant",
+      "text": "Automating learning with adaptive materials and feedback, and providing insights to support struggling students to enhance student engagement and better learning outcomes."
+    },
+    {
+      "icon": "fa fa-graduation-cap",
+      "name": "Exams",
+      "text": "To assess student progress and comprehension, providing a streamlined assessment process.The student progress is tracked countioulsy and the analysis reflected on our systems will enhance better decision making"
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "Online Learning materials",
+      "text": "Access a wide range of educational resources, including textbooks, articles, and multimedia content, available online for easy reference and study."
+    },
+    {
+      "icon": "fa fa-question-circle",
+      "name": "Online Quizzes",
+      "text": "Engage students with interactive quizzes that provide instant feedback, helping them assess their understanding of course material."
+    },
+    {
+      "icon": "fa fa-edit",
+      "name": "Student assignment",
+      "text": "Enable students to complete and submit assignments digitally, streamlining the workflow for both students and teachers."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"I'm eager for the potential impact of school Ifi on my students with special needs. The anticipation of accessibility features and personalized learning paths means I can better support every student's learning journey. It's a step towards more inclusive and equitable education.\"",
+      "name": "Emily, Special needs teacher"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Looking ahead, School Ifi holds immense promise for my college studies. The prospect of assistive AI and flexible learning options means I can adapt my learning to fit my schedule and grasp complex subjects more effectively. It's shaping up to be an essential tool for my academic success.\"",
+      "name": "Alex T, Tutor"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Looking ahead, School Ifi holds immense promise for my college studies. The prospect of assistive AI and flexible learning options means I can adapt my learning to fit my schedule and grasp complex subjects more effectively. It's shaping up to be an essential tool for my academic success.\"",
+      "name": "KU primmary school"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"As a parent, I anticipate that the App will revolutionize how I support my child's education. The promise of keeping me informed about their progress and involving me more in their learning journey is invaluable. Plus, its affordability makes quality education accessible.\"",
+      "name": "Maria S, Parent 6th grader"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"I see great potential in School Ifi. The prospect of real-time feedback tools and collaborative features means I can engage with my students in new ways. Plus, the opportunity to teach through the app opens doors for innovative educational approaches.\"",
+      "name": "John, Math teacher"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"I'm excited about the potential of [Your School App Name]. The promise of interactive modules and personalized learning paths means I can learn in a way that suits me best. It's set to make studying more engaging and effective than ever before.\"",
+      "name": "Victor, High School student"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/ceo.jpeg",
+      "name": "Ken Maina",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/tim.jpg",
+      "name": "Timothy Karuru",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/dev.jpg",
+      "name": "@Develop for change",
+      "job": "Senior Developer"
+    },
+    {
+      "img": "img/team/bree.jpg",
+      "name": "Brendah Nyanchama",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "00100 Nairobi Kenya, Nairobi, KE 00100 ",
+    "phone": "+254 741 677 901",
+    "email": "schooifi254@gmail.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "instagram": "instagram.com",
+    "linkedin": "linkedin.com"
+  }
+}
