@@ -160,7 +160,7 @@ const Contact = (props) => {
           <p>
             &copy; 2024 SCHOOL IFI. Design by{" "}
             <a href="https://www.linkedin.com/in/kbtech-community-5b2722310/" rel="nofollow">
-              KBTech Community
+              Schoolifi
             </a>
           </p>
         </div>
