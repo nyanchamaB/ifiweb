@@ -1,16 +1,15 @@
-import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import './App.css';
+import React, { useState, useEffect } from 'react';
 import Navigation from './components/navigation';
-import Contact from './components/contact';
+import Header  from './components/header';
 import About from './components/about';
-import Team from './components/Team';
-import { Header } from './components/header';
 import Programs from './components/programs';
 import Testimonials from './components/testimonials';
+import Team from './components/Team';
+import Contact from './components/contact';
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import './App.css';
+
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -32,7 +31,7 @@ function App() {
      <Programs data={landingPageData.Programs} />
      <Testimonials data={landingPageData.Testimonials} />
      <Team data={landingPageData.Team} />
-     <Contact data={landingPageData.Contact} />
+     <Contact data={landingPageData.Contact}/>
      </div>
      );
 }

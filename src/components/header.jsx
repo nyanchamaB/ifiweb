@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Header = (props) => {
+const Header = (props) => {
   return (
     <header id="header">
       <div className="intro">
@@ -17,7 +17,7 @@ export const Header = (props) => {
                   href="#features"
                   className="btn btn-custom btn-lg page-scroll"
                 >
-                  Learn More
+                  Request a demo
                 </a>{" "}
               </div>
             </div>
@@ -27,3 +27,5 @@ export const Header = (props) => {
     </header>
   );
 };
+
+export default Header;

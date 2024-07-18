@@ -2,7 +2,7 @@ import React from "react";
 
 const Programs = (props) => {
   return (
-    <div id="services" className="text-center">
+    <div id="programs" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Our Programs</h2>
@@ -16,7 +16,7 @@ const Programs = (props) => {
                 <div key={`${d.name}-${i}`} className="col-md-4">
                   {" "}
                   <i className={d.icon}></i>
-                  <div className="service-desc">
+                  <div className="program-desc">
                     <h3>{d.name}</h3>
                     <p>{d.text}</p>
                   </div>

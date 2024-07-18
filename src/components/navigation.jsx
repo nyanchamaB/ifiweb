@@ -18,7 +18,8 @@ const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            School IFI
+          <img src={`${process.env.PUBLIC_URL}/images/logoifi.png`} alt="Logo" className="logo-img" />
+          <span className="brand-text">School IFI</span>  
           </a>{" "}
         </div>
 
@@ -34,7 +35,7 @@ const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <a href="#programs" className="page-scroll">
                 Programs
               </a>
             </li>

@@ -14,7 +14,10 @@ const Testimonials = (props) => {
                   <div className="testimonial">
                     <div className="testimonial-image">
                       {" "}
-                      <img src={d.img} alt="" />{" "}
+                      <img  src={`${process.env.PUBLIC_URL}/images/testimonials/${d.img}`} alt={d.name} className="team-img"  onError={(e) => {
+console.error(`Error loading image for ${d.name}:`, e);
+    e.target.src = `${process.env.PUBLIC_URL}/images/placeholder.jpg`; // Fallback image
+  }} />{" "}
                     </div>
                     <div className="testimonial-content">
                       <p>"{d.text}"</p>

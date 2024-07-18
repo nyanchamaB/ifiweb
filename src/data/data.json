@@ -19,53 +19,7 @@
       "The app leverages digital technology including AI assistant to engage with learners"
     ]
   },
-  "Gallery": [
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
-    }
-  ],
+  
   "Programs": [
     {
       "icon": "fa fa-laptop",
@@ -98,67 +52,69 @@
       "text": "Enable students to complete and submit assignments digitally, streamlining the workflow for both students and teachers."
     }
   ],
+  
   "Testimonials": [
     {
-      "img": "img/testimonials/01.jpg",
+      "img": "01.jpg",
       "text": "\"I'm eager for the potential impact of school Ifi on my students with special needs. The anticipation of accessibility features and personalized learning paths means I can better support every student's learning journey. It's a step towards more inclusive and equitable education.\"",
       "name": "Emily, Special needs teacher"
     },
     {
-      "img": "img/testimonials/02.jpg",
+      "img": "02.jpg",
       "text": "\"Looking ahead, School Ifi holds immense promise for my college studies. The prospect of assistive AI and flexible learning options means I can adapt my learning to fit my schedule and grasp complex subjects more effectively. It's shaping up to be an essential tool for my academic success.\"",
       "name": "Alex T, Tutor"
     },
     {
-      "img": "img/testimonials/03.jpg",
+      "img": "03.jpg",
       "text": "\"Looking ahead, School Ifi holds immense promise for my college studies. The prospect of assistive AI and flexible learning options means I can adapt my learning to fit my schedule and grasp complex subjects more effectively. It's shaping up to be an essential tool for my academic success.\"",
       "name": "KU primmary school"
     },
     {
-      "img": "img/testimonials/04.jpg",
+      "img": "04.jpg",
       "text": "\"As a parent, I anticipate that the App will revolutionize how I support my child's education. The promise of keeping me informed about their progress and involving me more in their learning journey is invaluable. Plus, its affordability makes quality education accessible.\"",
       "name": "Maria S, Parent 6th grader"
     },
     {
-      "img": "img/testimonials/05.jpg",
+      "img": "05.jpg",
       "text": "\"I see great potential in School Ifi. The prospect of real-time feedback tools and collaborative features means I can engage with my students in new ways. Plus, the opportunity to teach through the app opens doors for innovative educational approaches.\"",
       "name": "John, Math teacher"
     },
     {
-      "img": "img/testimonials/06.jpg",
+      "img": "06.jpg",
       "text": "\"I'm excited about the potential of [Your School App Name]. The promise of interactive modules and personalized learning paths means I can learn in a way that suits me best. It's set to make studying more engaging and effective than ever before.\"",
       "name": "Victor, High School student"
     }
   ],
   "Team": [
     {
-      "img": "img/team/ceo.jpeg",
+      "img": "ken.PNG",
       "name": "Ken Maina",
       "job": "Director"
     },
     {
-      "img": "img/team/tim.jpg",
+      "img": "tim.jpg",
       "name": "Timothy Karuru",
       "job": "Senior Designer"
     },
     {
-      "img": "img/team/dev.jpg",
+      "img": "elvis.jpg",
       "name": "@Develop for change",
       "job": "Senior Developer"
     },
     {
-      "img": "img/team/bree.jpg",
+      "img": "brendah.jpg",
       "name": "Brendah Nyanchama",
       "job": "Project Manager"
     }
   ],
   "Contact": {
-    "address": "00100 Nairobi Kenya, Nairobi, KE 00100 ",
+    "address": "00100 Nairobi Kenya, Nairobi, KE",
     "phone": "+254 741 677 901",
     "email": "schooifi254@gmail.com",
-    "facebook": "fb.com",
+    "facebook": "https://www.facebook.com/profile.php?id=61562514097856",
     "twitter": "twitter.com",
-    "instagram": "instagram.com",
-    "linkedin": "linkedin.com"
+    "instagram": "https://www.instagram.com/schoolifi254/",
+    "linkedin": "https://www.linkedin.com/in/schoolifi-community-5b2722310/",
+    "youtube": "https://www.youtube.com/@School-ifi"
   }
 }

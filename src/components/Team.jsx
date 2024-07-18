@@ -16,7 +16,10 @@ const Team = (props) => {
                 <div key={`${d.name}-${i}`} className="col-md-3 col-sm-6 team">
                   <div className="thumbnail">
                     {" "}
-                    <img src={d.img} alt="..." className="team-img" />
+                    <img  src={`${process.env.PUBLIC_URL}/images/team/${d.img}`} alt={d.name} className="team-img"  onError={(e) => {
+console.error(`Error loading image for ${d.name}:`, e);
+    e.target.src = `${process.env.PUBLIC_URL}/images/placeholder.jpg`; // Fallback image
+  }} />
                     <div className="caption">
                       <h4>{d.name}</h4>
                       <p>{d.job}</p>

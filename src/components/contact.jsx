@@ -21,7 +21,7 @@ const Contact = (props) => {
     e.preventDefault();
     console.log(name, email, message);
     
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
+    /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ 
     
     emailjs
       .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
@@ -48,7 +48,7 @@ const Contact = (props) => {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form name="sentMessage" noValidate onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -130,23 +130,28 @@ const Contact = (props) => {
               <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
+                    <a href={props.data ? props.data.facebook : "https://www.facebook.com/profile.php?id=61562514097856" }  target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
+                    <a href={props.data ? props.data.twitter : "/"}  target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.linkedin : "/https://www.linkedin.com/in/kbtech-community-5b2722310/"}>
+                    <a href={props.data ? props.data.linkedin : "https://www.linkedin.com/in/schoolifi-community-5b2722310/"}  target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-linkedin"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.instagram : "/"}>
+                    <a href={props.data ? props.data.instagram : "https://www.instagram.com/schoolifi254/"}  target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={props.data ? props.data.youtube : "https://www.youtube.com/@School-ifi"}  target="_blank" rel="noopener noreferrer">
+                      <i className="fa fa-youtube"></i>
                     </a>
                   </li>
                 </ul>
@@ -159,7 +164,7 @@ const Contact = (props) => {
         <div className="container text-center">
           <p>
             &copy; 2024 SCHOOL IFI. Design by{" "}
-            <a href="https://www.linkedin.com/in/kbtech-community-5b2722310/" rel="nofollow">
+            <a href="https://www.linkedin.com/in/schoolifi-community-5b2722310/" rel="nofollow">
               Schoolifi
             </a>
           </p>
