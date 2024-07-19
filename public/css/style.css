@@ -283,23 +283,7 @@ header .intro-text {
   padding-bottom: 200px;
   text-align: center;
 }
-/* Features Section */
-#features {
-  background: #f6f6f6;
-  padding: 80px 0;
-}
-#features i.fa {
-  font-size: 38px;
-  margin-bottom: 20px;
-  transition: all 0.5s;
-  color: #fff;
-  width: 100px;
-  height: 100px;
-  padding: 30px 0;
-  border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-}
+
 /* About Section */
 #about {
   padding: 80px 0;
@@ -338,7 +322,8 @@ header .intro-text {
 }
 #about img {
   width: 520px;
-  margin-top: 10px;
+  height: 320px;
+  margin-top: 40px;
   background: #fff;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
@@ -1010,5 +995,81 @@ label {
   #about img {
     width: 100%;
     max-width: 300px;
+  }
+}
+/* Slide Menu Styles */
+@media (max-width: 767px) {
+  .slide-menu {
+    position: fixed;
+    top: 60px; /* Adjust based on your navbar height */
+    right: -250px;
+    width: 250px;
+    max-height: calc(100vh - 60px);
+    background-color: rgba(74, 144, 226, 0.9);
+    transition: right 0.3s ease;
+    padding: 20px 0;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .slide-menu.open {
+    right: 0;
+  }
+
+  .close-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .navbar-toggle {
+    display: block;
+    float: right;
+    margin-right: 15px;
+  }
+
+  .navbar-collapse {
+    display: none !important;
+  }
+
+  .slide-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .slide-menu li {
+    margin: 0;
+  }
+
+  .slide-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .slide-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle, .slide-menu, .close-menu {
+    display: none;
+  }
+
+  .navbar-collapse {
+    display: block !important;
   }
 }

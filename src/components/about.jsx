@@ -7,7 +7,7 @@ const About = (props) => {
         <div className="row">
           <div className="col-xs-12 col-md-6">
             {" "}
-            <img src={`${process.env.PUBLIC_URL}/images/about.PNG`} className="img-responsive" alt="Oops!!"  onError={(e) => { // Debug: Check if image fails to load
+            <img src={`${process.env.PUBLIC_URL}/images/Schoolifi.png`} className="img-responsive" alt="Oops!!"  onError={(e) => { // Debug: Check if image fails to load
                 console.error("Failed to load image:", e);
                 e.target.style.display = 'none'; // Hide broken image
               }}/>{" "}
