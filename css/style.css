@@ -1073,3 +1073,80 @@ label {
     display: block !important;
   }
 }
+
+@media (max-width: 768px) {
+  #about img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 40px auto;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+    word-wrap: break-word;
+  }
+
+  .intro p {
+    font-size: 16px;
+    word-wrap: break-word;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  #menu {
+    padding: 10px 0;
+  }
+
+  #menu a.navbar-brand {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  #menu a.navbar-brand .logo-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #menu.navbar-default .navbar-nav > li > a {
+    padding: 10px 15px;
+    margin: 0;
+    line-height: 20px;
+  }
+
+  .navbar-nav {
+    margin: 0;
+  }
+
+  .navbar-collapse {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  #programs i.fa {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    padding: 25px 0;
+  }
+
+  #contact .contact-item {
+    margin: 10px 0;
+  }
+}
