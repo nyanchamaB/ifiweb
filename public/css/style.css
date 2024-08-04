@@ -7,6 +7,8 @@ html {
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
+  overflow-x: hidden;
+
 }
 h2 {
   font-size: 32px;
@@ -80,9 +82,20 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 15px;
+  padding: 10px 0;
   transition: all 0.8s;
   background-color: rgba(74, 144, 226, 0.9);
+}
+#menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu .navbar-header {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 #menu.navbar-default {
   background-color: rgba(74, 144, 226, 0.9);
@@ -98,13 +111,12 @@ hr {
   display: flex;
   align-items: center;
   padding: 0 15px; 
+  margin-right: 0;
 }
 
 #menu a.navbar-brand .logo-img {
   max-height: 40px; /* Adjust for the height of the logo */
-  margin-right: 10px; /* Optional: Adjust the margin between logo and text */
   width: 40px; 
-  height: 40px; 
   border-radius: 50%; /* This makes the logo circular */
   object-fit: cover; /* This ensures the image fills the circular space */
   margin-right: 10px;
@@ -116,16 +128,29 @@ hr {
   white-space: nowrap;
   
 }
+#menu .navbar-collapse {
+  display: flex !important;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+#menu .navbar-nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   color: #fff;
   font-size: 15px;
   font-weight: 400;
-  padding: 8px 2px;
+  padding: 8px 15px;
   border-radius: 0;
   margin: 9px 20px 0;
   line-height: 40px;
+  white-space: nowrap;
   /*position: relative;
   overflow: hidden;*/
 }
@@ -168,6 +193,7 @@ hr {
 }
 .navbar-toggle {
   border-radius: 0;
+  display: none;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -245,16 +271,15 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  /* background: url(../img/Schoolfi.png) center center no-repeat; */
   background: linear-gradient(to right, #4a90e2, #6372ff);
-  color: #fff;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
@@ -282,6 +307,45 @@ header .intro-text {
   padding-top: 350px;
   padding-bottom: 200px;
   text-align: center;
+}
+/* demo section */
+/* Demo Section */
+#demo {
+  padding: 80px 0;
+  background-color: #f6f6f6;
+}
+
+#demo .section-title {
+  margin-bottom: 40px;
+}
+
+#demo form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#demo .form-group {
+  margin-bottom: 20px;
+}
+
+#demo .form-control {
+  height: auto;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+#demo textarea.form-control {
+  min-height: 150px;
+}
+
+#demo .btn-custom {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  #demo {
+    padding: 40px 0;
+  }
 }
 
 /* About Section */
@@ -1100,33 +1164,88 @@ label {
 }
 
 @media (max-width: 767px) {
-  #menu {
-    padding: 10px 0;
+  #menu .container {
+    flex-wrap: nowrap;
+  }
+
+  #menu .navbar-header {
+    flex-grow: 1;
   }
 
   #menu a.navbar-brand {
-    padding: 10px 15px;
-    font-size: 18px;
+    padding: 0 5px;
   }
 
   #menu a.navbar-brand .logo-img {
     width: 30px;
     height: 30px;
+    margin-right: 5px;
   }
 
-  #menu.navbar-default .navbar-nav > li > a {
-    padding: 10px 15px;
+  #menu a.navbar-brand .brand-text {
+    font-size: 16px;
+  }
+
+  #menu .navbar-collapse {
+    display: none !important;
+  }
+
+  .navbar-toggle {
+    display: block;
+    margin-left: 10px;
+    padding: 9px 10px;
+  }
+
+  .slide-menu {
+    position: fixed;
+    top: 60px;
+    right: -250px;
+    width: 150px;
+    height: calc(100vh - 60px);
+    background-color: rgba(74, 144, 226, 0.9);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+    max-height: 40%;
+  }
+
+  .slide-menu.open {
+    right: 0;
+  }
+
+  .slide-menu ul {
+    flex-direction: column;
+    padding: 20px 0;
+    flex-grow: 1;
     margin: 0;
-    line-height: 20px;
+    display: flex;
+    justify-content: flex-start;
   }
 
-  .navbar-nav {
+  .slide-menu li {
     margin: 0;
+    width: 100%;
+  }
+  .slide-menu li:last-child a {
+    border-bottom: none;
   }
 
-  .navbar-collapse {
-    padding-left: 15px;
-    padding-right: 15px;
+  .slide-menu a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: block;
+  }
+
+  .close-menu {
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
   }
 }
 
@@ -1150,3 +1269,4 @@ label {
     margin: 10px 0;
   }
 }
+
