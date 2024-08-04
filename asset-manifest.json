@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/ifiweb/static/css/main.2d1e0901.css",
-    "main.js": "/ifiweb/static/js/main.8cf3acfe.js",
-    "static/js/453.e14f651f.chunk.js": "/ifiweb/static/js/453.e14f651f.chunk.js",
+    "main.css": "/ifiweb/static/css/main.b04946af.chunk.css",
+    "main.js": "/ifiweb/static/js/main.9fd19f08.chunk.js",
+    "main.js.map": "/ifiweb/static/js/main.9fd19f08.chunk.js.map",
+    "runtime-main.js": "/ifiweb/static/js/runtime-main.e74fdca1.js",
+    "runtime-main.js.map": "/ifiweb/static/js/runtime-main.e74fdca1.js.map",
+    "static/js/2.41bc1b16.chunk.js": "/ifiweb/static/js/2.41bc1b16.chunk.js",
+    "static/js/2.41bc1b16.chunk.js.map": "/ifiweb/static/js/2.41bc1b16.chunk.js.map",
+    "static/js/3.715c3464.chunk.js": "/ifiweb/static/js/3.715c3464.chunk.js",
+    "static/js/3.715c3464.chunk.js.map": "/ifiweb/static/js/3.715c3464.chunk.js.map",
     "index.html": "/ifiweb/index.html",
-    "main.2d1e0901.css.map": "/ifiweb/static/css/main.2d1e0901.css.map",
-    "main.8cf3acfe.js.map": "/ifiweb/static/js/main.8cf3acfe.js.map",
-    "453.e14f651f.chunk.js.map": "/ifiweb/static/js/453.e14f651f.chunk.js.map"
+    "precache-manifest.4c626a55217ca1ab56816929d753f8b5.js": "/ifiweb/precache-manifest.4c626a55217ca1ab56816929d753f8b5.js",
+    "service-worker.js": "/ifiweb/service-worker.js",
+    "static/css/main.b04946af.chunk.css.map": "/ifiweb/static/css/main.b04946af.chunk.css.map",
+    "static/js/2.41bc1b16.chunk.js.LICENSE.txt": "/ifiweb/static/js/2.41bc1b16.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/css/main.2d1e0901.css",
-    "static/js/main.8cf3acfe.js"
+    "static/js/runtime-main.e74fdca1.js",
+    "static/js/2.41bc1b16.chunk.js",
+    "static/css/main.b04946af.chunk.css",
+    "static/js/main.9fd19f08.chunk.js"
   ]
 }
