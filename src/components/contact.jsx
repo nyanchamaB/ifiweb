@@ -1,12 +1,11 @@
-import { useState } from "react";
-import emailjs from "emailjs-com";
-import React from "react";
+import React, { useState } from "react";
 
 const initialState = {
   name: "",
   email: "",
   message: "",
 };
+
 const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
 
@@ -14,27 +13,34 @@ const Contact = (props) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
+
   const clearState = () => setState({ ...initialState });
-  
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    
-    /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ 
-    
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+  
+    fetch('http://localhost:5000/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name, email, message }),
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Success:', data);
+      clearState();
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
   };
+  
   return (
     <div>
       <div id="contact">
@@ -60,6 +66,7 @@ const Contact = (props) => {
                         placeholder="Name"
                         required
                         onChange={handleChange}
+                        value={name}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -74,6 +81,7 @@ const Contact = (props) => {
                         placeholder="Email"
                         required
                         onChange={handleChange}
+                        value={email}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -88,6 +96,7 @@ const Contact = (props) => {
                     placeholder="Message"
                     required
                     onChange={handleChange}
+                    value={message}
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
@@ -130,27 +139,27 @@ const Contact = (props) => {
               <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : "https://www.facebook.com/profile.php?id=61562514097856" }  target="_blank" rel="noopener noreferrer">
+                    <a href={props.data ? props.data.facebook : "https://www.facebook.com/profile.php?id=61562514097856"} target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : "/"}  target="_blank" rel="noopener noreferrer">
+                    <a href={props.data ? props.data.twitter : "/"} target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.linkedin : "https://www.linkedin.com/in/schoolifi-community-5b2722310/"}  target="_blank" rel="noopener noreferrer">
+                    <a href={props.data ? props.data.linkedin : "https://www.linkedin.com/in/schoolifi-community-5b2722310/"} target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-linkedin"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.instagram : "https://www.instagram.com/schoolifi254/"}  target="_blank" rel="noopener noreferrer">
+                    <a href={props.data ? props.data.instagram : "https://www.instagram.com/schoolifi254/"} target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.youtube : "https://www.youtube.com/@School-ifi"}  target="_blank" rel="noopener noreferrer">
+                    <a href={props.data ? props.data.youtube : "https://www.youtube.com/@School-ifi"} target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-youtube"></i>
                     </a>
                   </li>

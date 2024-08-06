@@ -1,29 +1,40 @@
-import React from 'react';
+ /* import React from "react";
 
-const Demo = () => {
+const DemoPage = () => {
   return (
     <div className="demo-page">
-      <div className="container">
-        <h1>Request a Demo</h1>
-        <p>Fill out the form below to request a demo of our product.</p>
-        <form>
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" className="form-control" id="name" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input type="email" className="form-control" id="email" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea className="form-control" id="message" rows="3" required></textarea>
-          </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
-        </form>
+      <div className="demo-container">
+        <div className="demo-form">
+          <h2>Request a Demo</h2>
+          <form>
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="organization">School or Organization</label>
+              <input type="text" id="organization" name="organization" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="county">County</label>
+              <input type="text" id="county" name="county" required />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div className="demo-image">
+          <img src="path-to-your-image.jpg" alt="Demo" />
+        </div>
+      </div>
+      <div className="contact-section">   
+
       </div>
     </div>
   );
 };
 
-export default Demo;
+export default DemoPage; */
