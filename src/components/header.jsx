@@ -1,6 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = (props) => {
+  const navigate = useNavigate();
+
+  const handleDemoRequest = (event) => {
+    event.preventDefault(); // Prevent the default link behavior
+    navigate("/demo");
+  };
+
   return (
     <header id="header">
       <div className="intro">
@@ -14,11 +22,12 @@ const Header = (props) => {
                 </h1>
                 <p>{props.data ? props.data.paragraph : "Loading"}</p>
                 <a
-                  href="#features"
+                  href="/demo"
                   className="btn btn-custom btn-lg page-scroll"
+                  onClick={handleDemoRequest}
                 >
                   Request a demo
-                </a>{" "}
+                </a>
               </div>
             </div>
           </div>
